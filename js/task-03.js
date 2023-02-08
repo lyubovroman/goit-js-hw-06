@@ -14,7 +14,7 @@ const images = [
 ];
 const listOfImages = document.querySelector('#gallery');
 
-listOfImages.style.display = flex;
+listOfImages.style.display = 'flex';
 listOfImages.style.justifyContent = `center`;
 listOfImages.style.alignItems = `center`;
 listOfImages.style.backgroundColor = `pink`;

@@ -11,7 +11,7 @@ const loginSubmitFormHandler = (event) => {
     if (email === "" || password === "") {
         alert("Заповніть форму")
     }
-    event.currentTarget.reset();
+    else {console.log (`Login: ${email.value}, Password: ${password.value}`)}
 }
 
 
