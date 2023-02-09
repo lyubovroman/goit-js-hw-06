@@ -14,10 +14,12 @@ const images = [
 ];
 const listOfImages = document.querySelector('#gallery');
 
+
+
 listOfImages.style.display = 'flex';
-listOfImages.style.justifyContent = `center`;
-listOfImages.style.alignItems = `center`;
-listOfImages.style.backgroundColor = `pink`;
+listOfImages.style.justifyContent = 'center';
+listOfImages.style.alignItems = 'center';
+listOfImages.style.backgroundColor = 'pink';
 
 const imagesItem = ({ url, alt }) => {
   return `<li class = "images_item">
@@ -25,8 +27,8 @@ const imagesItem = ({ url, alt }) => {
 };
 
 
-const newListOfImagesEl = images.map(imagesItem).join(" ");
-console.log(newListOfImagesEl);
+const newListOfImages = images.map(imagesItem).join(" ");
+console.log(newListOfImages);
 
 
-listOfImagesEl.insertAdjacentHTML('afterbegin', newListOfImagesEl)
+listOfImages.insertAdjacentHTML("afterbegin", newListOfImages);
